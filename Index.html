@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="Model/userModel.js" defer></script>
+    <script src="Controller/userController.js" defer></script>
+    <script src="View/userView.js" defer></script>
+<!--<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> -->    
+    <title> API GitHub </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <header>
+        <h1>GitHub</h1>
+    </header>
+
+    <form>
+        <p>Digite o nome do usuário:</p>
+        <input id="buscaUsuario" type="text">
+        <button id="btnUsuario" type="submit">Buscar</button>
+    </form>
+
+    <main>
+        <div id="parteUsuario"></div>
+        <div id="parteRepositorio"></div>
+    </main>
+</body>
+
+</html>
