@@ -1,33 +1,17 @@
 class Usuario {
-    constructor(user,foto,followers,followings) {
+    constructor(user,foto, repos,followers,followings) {
         this._user = user;
         this._foto = foto;
         this._followers = followers;
         this._followings = followings;
 }
 
-    getUsuario() {
+    get usuario() {
         return {
             user: this._user,
             foto: this._foto,
             followers: this._followers,
             followings: this._followings,
-        };
-    }
-}
-
-class Repositorio {
-    constructor(nomeRepo,urlRepo,descricao) {
-        this._nomeRepo = nomeRepo;
-        this._urlRepo = urlRepo;
-        this._descricao = descricao;
-    }
-
-    getRepositorio () {
-        return {
-        nomeRepo: this._nomeRepo,
-        urlRepo: this._urlRepo,
-        descricao: this._descricao
         };
     }
 }

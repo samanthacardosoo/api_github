@@ -2,12 +2,17 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="srcs/models/userModel.js" defer></script>
+    <script src="srcs/models/repoModel.js" defer></script>
+    <script src="srcs/views/userView.js" defer></script>
+    <script src="srcs/views/repoView.js" defer></script>    
+    <script src="srcs/controllers/userController.js" defer></script>
+    <script src="srcs/controllers/repoController.js" defer></script>
     <script src="main.js" defer></script>
-    <script src="Model/userModel.js" defer></script>
-    <script src="Controller/userController.js" defer></script>
-    <script src="View/userView.js" defer></script>
+
 <!--<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> -->    
     <title> API GitHub </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,8 +24,8 @@
     </header>
 
     <form>
-        <p>Digite o nome do usuário:</p>
-        <input id="buscaUsuario" type="text">
+        Digite o nome do usuário:
+        <input id="buscaUsuario" type="text" name="user">
         <button id="btnUsuario" type="submit">Buscar</button>
     </form>
 

@@ -4,11 +4,11 @@ let parteRepositorio = document.querySelector ("#parteRepositorio");
  //não sei o que isso acima significa
 let nomeUsuario;
 
-btnUsuario.addEventListener("submit",() => {
+btnUsuario.addEventListener("submit",(event) => {
     event.preventDefault();
     parteRepositorio.innerHTML = "";    //não sei o que significa
 
 UsuarioController.requisicaoUsuario();
-RepositorioController.requisicaoRepos();
+RepositorioController.requisicaoRepos();  //não sei o que significa
     
 });
