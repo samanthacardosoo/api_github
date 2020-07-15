@@ -1,14 +1,13 @@
 let buscaUsuario = document.querySelector("#buscaUsuario");
 let btnUsuario = document.querySelector ("#btnUsuario");
 let parteRepositorio = document.querySelector ("#parteRepositorio");
- //não sei o que isso acima significa
-let nomeUsuario;
 
-btnUsuario.addEventListener("submit",(event) => {
+btnUsuario.addEventListener("submit",() => {
     event.preventDefault();
-    parteRepositorio.innerHTML = "";    //não sei o que significa
+    let userUrl = `https://api.github.com/users/${this.elements.user.value}`
+    let repUrl = `https://api.github.com/users/${this.elements.user.value}/repos`
 
-UsuarioController.requisicaoUsuario();
-RepositorioController.requisicaoRepos();  //não sei o que significa
+UsuarioController.geraUsuario(userUrl);
+RepositorioController.geraRepositorio(repUrl);
     
 });

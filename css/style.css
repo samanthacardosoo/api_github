@@ -1,9 +1,28 @@
-* {
-    text-align: center
+body {
+    background: #f0ece2; 
+    font-family: 'Rufina', serif;   
+}
+
+header {
+    background-color: #69779b;
+    display: flex;
+    justify-content: space-around;
 }
 
 h1 {
     font-weight: bold;
     font-size: 30px;
+    color: #010101;
     padding: 20px;
+}
+
+form {
+    color: #acdbdf;
+    padding: 25px;
+}
+
+footer {
+    color: #acdbdf;
+    background: #69779b;
+    text-align: center;
 }

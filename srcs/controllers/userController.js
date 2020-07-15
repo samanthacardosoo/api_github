@@ -1,20 +1,19 @@
 class UsuarioController {
-
+    
     static geraUsuario() {
-        parteUsuario.innerHTML = "";
+        let parteUsuario = document.querySelector("#parteUsuario")
         let requisicao = new XMLHttpRequest ();
-        requisicao.open ("GET", `https://api.github.com/users/${this.elements.user.value}`)
+        requisicao.open ("GET", "userUrl")
 
         requisicao.addEventListener ("load",() => {
             if (requisicao.status == 200) {
-                let parteUsuario = document.querySelector("#parteUsuario");
                 let resposta = JSON.parse (requisicao.responseText);
                 let criaUsuario = new Usuario(resposta.login, 
                                             resposta.avatar_url, 
                                             resposta.followers, 
                                             resposta.following);
                 
-                parteUsuario.innerHTML = UsuarioView.templateUsuario(criaUsuario.usuario);
+        parteUsuario.innerHTML = UsuarioView.templateUsuario(criaUsuario);
             } else {
                 alert ("Identificamos um erro, tente novamente")
             }

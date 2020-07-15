@@ -1,12 +1,12 @@
 class RepositorioController {
 
     static geraRepositorio() {
+        let parteRepositorio = document.querySelector("#parteRepositorio")
         let req = new XMLHttpRequest ();
-        req.open ("GET", `https://api.github.com/users/${this.elements.user.value}/repos`);
+        req.open ("GET", "repUrl");
 
         req.addEventListener("load", () => {
             if (req.status == 200) {
-                let parteRepositorio = document.querySelector("parteRepositorio");
                 let respostaRep = JSON.parse(req.responseText);
                 let arrayRepos = [];
                 for (let i = 0; i<respostaRep.length; i++) {  

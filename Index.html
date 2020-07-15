@@ -12,8 +12,7 @@
     <script src="srcs/controllers/userController.js" defer></script>
     <script src="srcs/controllers/repoController.js" defer></script>
     <script src="main.js" defer></script>
-
-<!--<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> -->    
+    <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
     <title> API GitHub </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
@@ -21,18 +20,20 @@
 <body>
     <header>
         <h1>GitHub</h1>
+    
+        <form>
+            Digite o nome do usuário:
+            <input id="buscaUsuario" type="text" name="user">
+            <button id="btnUsuario" type="submit">Buscar</button>
+        </form>
     </header>
 
-    <form>
-        Digite o nome do usuário:
-        <input id="buscaUsuario" type="text" name="user">
-        <button id="btnUsuario" type="submit">Buscar</button>
-    </form>
-
-    <main>
         <div id="parteUsuario"></div>
         <div id="parteRepositorio"></div>
-    </main>
+
+    <footer>
+        <p>Samantha Cardoso &copy</p>
+    </footer>
 </body>
 
 </html>
