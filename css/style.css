@@ -16,13 +16,56 @@ h1 {
     padding: 20px;
 }
 
-form {
+#campoUsuario {
     color: #acdbdf;
     padding: 25px;
 }
 
+main {
+    display: flex;
+}
+
+#parteUsuario {
+    display:flex;
+}
+
+#usuario {
+    font-weight: bold;
+    margin-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#foto {
+    width: 45%;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+#foll {
+    margin-left: 25px;
+    padding: 15px;
+}
+
+#parteRepositorio {
+    padding-top: 30px;
+}
+
+#nomeRep {
+    border: solid;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+#foll {
+    margin-left: 25px;
+}
 footer {
     color: #acdbdf;
     background: #69779b;
+    padding: 20px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

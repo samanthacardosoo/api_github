@@ -1,9 +1,9 @@
 class UsuarioController {
-    
-    static geraUsuario() {
+
+    static geraUsuario(userUrl) {
         let parteUsuario = document.querySelector("#parteUsuario")
         let requisicao = new XMLHttpRequest ();
-        requisicao.open ("GET", "userUrl")
+        requisicao.open ("GET", userUrl);
 
         requisicao.addEventListener ("load",() => {
             if (requisicao.status == 200) {
@@ -13,7 +13,7 @@ class UsuarioController {
                                             resposta.followers, 
                                             resposta.following);
                 
-        parteUsuario.innerHTML = UsuarioView.templateUsuario(criaUsuario);
+        parteUsuario.innerHTML = UsuarioView.templateUsuario(criaUsuario.getUsuario());
             } else {
                 alert ("Identificamos um erro, tente novamente")
             }

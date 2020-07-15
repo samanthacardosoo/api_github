@@ -6,7 +6,7 @@ class Usuario {
         this._followings = followings;
 }
 
-    get usuario() {
+    getUsuario() {
         return {
             user: this._user,
             foto: this._foto,

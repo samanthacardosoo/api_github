@@ -4,7 +4,7 @@ class Repositorio {
         this._urlRepo = urlRepo;
     }
 
-    get repositorio () {
+    getRepositorio () {
         return {
         nomeRepo: this._nomeRepo,
         urlRepo: this._urlRepo,
