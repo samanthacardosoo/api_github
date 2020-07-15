@@ -8,8 +8,8 @@ class UsuarioController {
         requisicao.addEventListener ("load",() => {
             if (requisicao.status == 200) {
                 let resposta = JSON.parse (requisicao.responseText);
-                let criaUsuario = new Usuario(resposta.login, 
-                                            resposta.avatar_url, 
+                let criaUsuario = new Usuario(resposta.avatar_url,
+                                            resposta.login,  
                                             resposta.followers, 
                                             resposta.following);
                 

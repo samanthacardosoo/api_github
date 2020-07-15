@@ -2,8 +2,8 @@ class RepositorioView {
 
     static templateRepositorio(criaRepositorio) {
         return `
-        <p id="nomeRep">${criaRepositorio.nomeRepo}</p>
-        <a href="${criaRepositorio.urlRepo}"></a>
-        `;
+        <div id="repIndiv">
+        <a href="${criaRepositorio.urlRepo}">${criaRepositorio.nomeRepo}</a>
+        </div>`;
     }
 }

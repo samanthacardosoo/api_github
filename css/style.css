@@ -16,9 +16,28 @@ h1 {
     padding: 20px;
 }
 
+#buscaUsuario {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px
+}
+
+#btnUsuario {
+    border-radius: 9px;
+    padding: 5px;
+    border: none;
+    margin-left: 5px;
+}
+
 #campoUsuario {
     color: #acdbdf;
     padding: 25px;
+    display:flex;
+}
+
+#campoUsuario p {
+    padding: 5px;
 }
 
 main {
@@ -27,45 +46,91 @@ main {
 
 #parteUsuario {
     display:flex;
+    text-align: center;
 }
 
 #usuario {
     font-weight: bold;
-    margin-left: 30px;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #foto {
+    padding: 20px;
     width: 45%;
-    border-radius: 5px;
-    margin-left: 25px;
-}
-
-#foll {
-    margin-left: 25px;
-    padding: 15px;
+    border-radius: 150px;
 }
 
 #parteRepositorio {
     padding-top: 30px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#nomeRep {
+#repIndiv {
     border: solid;
-    border-radius: 2px;
+    border-color: #acdbdf;
+    border-radius: 50px;
     padding: 20px;
+    padding-top: 40px;
+    margin: 15px; 
+}
+
+#repIndiv a {
+    text-decoration: none;
+    color: #010101;
+
 }
 
 #foll {
-    margin-left: 25px;
+    padding: 15px;
+    text-decoration: none;
+    color: #010101;
 }
-footer {
-    color: #acdbdf;
-    background: #69779b;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    #campoUsuario {
+        display: block;
+    }
+    #campoUsuario p {
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+    #buscaUsuario {
+        padding: 10px;
+        padding-top: 8px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #btnUsuario {
+        padding-top: 8px;
+        padding: 8px;
+        font-size: 20px;
+        display: block;
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    #parteRepositorio {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+    }
+
 }

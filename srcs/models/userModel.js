@@ -1,15 +1,15 @@
 class Usuario {
-    constructor(user,foto,followers,followings) {
+    constructor(foto,user,followers,followings) {
+        this._foto = foto;        
         this._user = user;
-        this._foto = foto;
         this._followers = followers;
         this._followings = followings;
 }
 
     getUsuario() {
         return {
-            user: this._user,
             foto: this._foto,
+            user: this._user,
             followers: this._followers,
             followings: this._followings,
         };
