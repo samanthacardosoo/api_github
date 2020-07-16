@@ -4,6 +4,8 @@ let parteRepositorio = document.querySelector ("#parteRepositorio");
 
 
 btnUsuario.addEventListener("click",() => {
+    parteRepositorio.innerHTML = ""
+    
     let userUrl = `https://api.github.com/users/${buscaUsuario.value}`
     let repUrl = `https://api.github.com/users/${buscaUsuario.value}/repos`
 
