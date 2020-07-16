@@ -70,11 +70,13 @@ main {
 
 #repIndiv {
     border: solid;
-    border-color: #acdbdf;
+    background:#acdbdf;
+    border-color: #69779b;
     border-radius: 50px;
     padding: 20px;
-    padding-top: 40px;
-    margin: 15px; 
+    margin: 15px;
+    display: flex;
+    align-items: center;
 }
 
 #repIndiv a {
