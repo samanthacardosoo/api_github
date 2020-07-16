@@ -6,7 +6,6 @@ class RepositorioController {
         req.open ("GET", repUrl);
 
         req.addEventListener("load", () => {
-            if (req.status == 200) {
                 let respostaRep = JSON.parse(req.responseText);
                 let arrayRepos = [];
                 for (let i = 0; i<respostaRep.length; i++) {  
@@ -15,9 +14,6 @@ class RepositorioController {
 
                 parteRepositorio.innerHTML += RepositorioView.templateRepositorio(criaRepositorio.getRepositorio())
                 }    
-            } else {
-                alert ("Identificamos um erro, tente novamente")
-            }
             });
         req.send ();
         }

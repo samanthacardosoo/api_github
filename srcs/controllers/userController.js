@@ -15,7 +15,7 @@ class UsuarioController {
                 
         parteUsuario.innerHTML = UsuarioView.templateUsuario(criaUsuario.getUsuario());
             } else {
-                alert ("Identificamos um erro, tente novamente")
+                alert ("Usuario não encontrado, tente novamente")
             }
         });
         requisicao.send()
